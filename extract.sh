@@ -1,7 +1,11 @@
+#!/bin/sh
+
+echo "Working directory $1"
+cd $1
+
 for f in `ls *.MOV`
 do
    echo $f
-
    fn="${f%.*}"
    mkdir $fn
    fps=`ffprobe -v 0 -of csv=p=0 -select_streams v:0 -show_entries stream=r_frame_rate 1_$f | bc`
