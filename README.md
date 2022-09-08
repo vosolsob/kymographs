@@ -3,7 +3,7 @@ Automated kymographs from MOV files
 
 1) Place your MOV movie files in selected directory
 
-2) If you are working on computer cluster start a job by
+2) If you are working on computer cluster start a job by (-I is with uppercase i)
 
 qsub -I 
 
